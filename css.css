@@ -1,0 +1,131 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background: url(F_Emit1.jpg) center/cover;
+    min-height: 100vh;
+    color: white;
+    /* Animation de fade-in */
+    opacity: 0;
+    animation: fadeInBody 1s ease-in forwards;
+}
+
+@keyframes fadeInBody {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+header {
+    border-bottom: 3px solid rgb(255, 255, 255);
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.615);
+    font-family: 'Times New Roman', Times, serif;
+    /* Animation slide depuis le haut */
+    transform: translateY(-50px);
+    opacity: 0;
+    animation: slideDown 1.5s ease-out forwards;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+#menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-flex;
+    justify-content: flex-end;
+    gap: 0px;
+    font-size: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    background-color: transparent;
+    font-size: 15px;
+}
+
+#menu li {
+    margin: 0;
+    padding: 0;
+}
+
+#menu li a {
+    text-decoration: none;
+    padding: 10px 5px;
+    /* tu peux garder un padding interne pour le bouton */
+    background-color: transparent;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.photo-profils {
+    margin: 5rem 5rem 0 5rem;
+
+    text-align: center;
+}
+
+#photo-profils {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.home-content {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+.social-icons {
+    line-height: 1;
+    text-align: center;
+    width: 1rem;
+    height: 1rem;
+}
+
+/* Animation pour le contenu central */
+.home-content {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+
+    /* Fade + slide depuis le bas */
+    transform: translateY(50px);
+    opacity: 0;
+    animation: fadeSlideUp 1s ease-out forwards;
+
+    /* commence après le header */
+}
+
+@keyframes fadeSlideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
