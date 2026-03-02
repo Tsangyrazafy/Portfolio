@@ -1,0 +1,84 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    background: url(./F_Parcours\ étu.jpg) center/cover;
+    min-height: 100vh;
+    color: white
+}
+
+/* Barre grise du header */
+header {
+    background-color: greenyellow;
+    padding: 15px 30px;
+}
+
+/* Organisation logo + menu */
+.header {
+    display: flex;
+    justify-content: space-between;
+    /* logo gauche, menu droite */
+    align-items: center;
+}
+
+/* Logo */
+.logo h1 {
+    color: white;
+}
+
+/* Supprimer les puces + empêcher retour ligne */
+.menu {
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap;
+    /* empêche de passer à la ligne */
+}
+
+/* Espacement entre les liens */
+.menu li {
+    margin-left: 10px;
+    white-space: nowrap;
+    /* empêche le texte de couper */
+}
+
+/* Style des liens */
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+
+    /* Taille responsive automatique */
+    font-size: clamp(10px, 1.2vw, 16px);
+}
+
+/* Effet au survol */
+.menu a:hover {
+    text-decoration: underline;
+}
+
+/* Paragraphes */
+p {
+    margin: 20px 30px;
+    line-height: 1.8;
+}
+
+/* Espace entre les paragraphes */
+p+p {
+    margin-top: 30px;
+}
+
+.img-Chérubins {
+    border-radius: 100%;
+    align-items: center;
+
+}
+
+.EMIT {
+    -moz-text-size-adjust: auto;
+}
