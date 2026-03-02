@@ -47,4 +47,157 @@ nav ul li a {
     background-color: transparent;
     color: #ffffff;
     font-weight: bold;
+
+}
+
+main {
+    margin: 6rem;
+}
+
+/* Conteneur global centré */
+.skill-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    margin: 30px 0;
+    flex-wrap: nowrap;
+}
+
+.skill-name {
+    font-weight: bold;
+    font-size: 18px;
+    width: 80px;
+    text-align: left;
+    white-space: nowrap;
+
+}
+
+/* Conteneur de la barre */
+.progress-container {
+    width: 300px;
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Barre de progression animée */
+.progress-bar {
+    height: 100%;
+    background-color: #0b0d34;
+    width: 0%;
+    /* démarre à 0% */
+    animation: fillBar 2s forwards;
+}
+
+/* Animation */
+@keyframes fillBar {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 30%;
+    }
+}
+
+.progress-bar.SFH {
+    animation: fillSFH 2s forwards;
+}
+
+.progress-bar.Scratch {
+    animation: fillScratch 2s forwards;
+}
+
+.progress-bar.html {
+    animation: fillHtml 2s forwards;
+}
+
+.progress-bar.css {
+    animation: fillcss 2s forwards;
+}
+
+
+.progress-bar.Js {
+    animation: fillJs 2s forwards;
+}
+
+.progress-bar.Py {
+    animation: fillPy 2s forwards;
+}
+
+.progress-bar.Rbt {
+    animation: fillRbt 2s forwards;
+}
+
+/* Animations individuelles */
+@keyframes fillSFH {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 70%;
+    }
+}
+
+@keyframes fillScratch {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 60%;
+    }
+}
+
+@keyframes fillHtml {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 40%;
+    }
+}
+
+@keyframes fillcss {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 30%;
+    }
+}
+
+@keyframes fillJs {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 10%;
+    }
+}
+
+@keyframes fillPy {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 8%;
+    }
+}
+
+@keyframes fillRbt {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 5%;
+    }
 }
