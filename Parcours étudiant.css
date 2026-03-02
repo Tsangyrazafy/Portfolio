@@ -1,0 +1,138 @@
+/* Animation */
+@keyframes fadeSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+/* Animation du main avec petit délai */
+main {
+    animation: fadeSlideUp 2s ease forwards;
+    animation-delay: 0.3s;
+    opacity: 0;
+    /* important pour que l'effet fonctionne */
+}
+
+@keyframes SlideDown {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* base */
+body {
+    margin: 0px;
+    padding: 0px;
+    background: url(F_Emit1.jpg) center/cover;
+    min-height: 100vh;
+    color: white;
+}
+
+header {
+    border-bottom: 3px solid rgb(255, 255, 255);
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.615);
+    font-family: 'Times New Roman', Times, serif;
+    /* Animation slide depuis le haut */
+    transform: translateY(-50px);
+    opacity: 0;
+    animation: slideDown 1.5s ease-out forwards;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+#menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-flex;
+    justify-content: flex-end;
+    gap: 0px;
+    font-size: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    background-color: transparent;
+    font-size: 15px;
+}
+
+#menu li {
+    margin: 0;
+    padding: 0;
+}
+
+#menu li a {
+    text-decoration: none;
+    padding: 10px 5px;
+    /* tu peux garder un padding interne pour le bouton */
+    background-color: transparent;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* variables */
+
+.P1 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.chérubins {
+    color: white;
+    background-color: rgba(34, 34, 34, 0.715);
+    margin: 0px;
+    padding: 1px;
+    height: 6, 3rem;
+    width: 20rem;
+    border-radius: 4px;
+}
+
+.img-Chérubins1 {
+    display: box;
+    border: 3px dashed rgba(34, 34, 34, 0.715);
+    border-radius: 13rem;
+    border-color: rgba(34, 34, 34, 0.715);
+
+}
+
+.img-Chérubins2 {
+    display: box;
+    border: 3px dashed rgba(34, 34, 34, 0.715);
+    border-radius: 13rem;
+    border-color: rgba(34, 34, 34, 0.715);
+
+}
+
+main {
+    margin: 50px 12rem;
+}
