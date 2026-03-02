@@ -1,10 +1,26 @@
-/* base */
 body {
     margin: 0px;
     padding: 0px;
-    background: url(F_Emit1.jpg) center/cover;
+    background-image: url(F_Emit1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     min-height: 100vh;
     color: white;
+    /* Animation de fade-in */
+    opacity: 0;
+    animation: fadeInBody 1s ease-in forwards;
+}
+
+@keyframes fadeInBody {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 header {
@@ -16,7 +32,22 @@ header {
     justify-content: space-between;
     background-color: rgba(0, 0, 0, 0.615);
     font-family: 'Times New Roman', Times, serif;
+    /* Animation slide depuis le haut */
+    transform: translateY(-50px);
+    opacity: 0;
+    animation: slideDown 1.5s ease-out forwards;
+}
 
+@keyframes slideDown {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 #menu {
@@ -49,30 +80,61 @@ nav ul li a {
     font-weight: bold;
 }
 
-.F_Scout {
-    height: 20rem;
-    width: 18rem;
-    border-radius: 100%;
-}
-
-.T1 {
-    color: white;
-    background-color: rgba(34, 34, 34, 0.715);
-    margin: 3rem;
-    padding: 1px;
-    height: 6rem, 4rem;
-    width: 25rem;
-    border-radius: 4px;
-
-}
-
 .imgF {
     display: flex;
     align-items: center;
-    gap: 15px;
 }
 
 .imgF img {
-    width: 150px;
-    height: auto;
+    width: 200px;
+    margin: 10px;
+    margin-right: 10px;
+    margin-left: 3rem;
+    border-radius: 20px;
+    height: 300px;
+}
+
+.imgF .T1 {
+    padding: 3%;
+    background-color: rgba(0, 0, 0, 0.615);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 20px;
+}
+
+.imgF .T1 p {
+    margin: 0 0 2px 0;
+    /* marge basse de 2px seulement */
+    padding: 0;
+}
+
+.imgGW {
+    display: flex;
+    align-items: center;
+}
+
+.imgGW img {
+    width: 180px;
+    margin-right: 10px;
+    margin-left: 3rem;
+    border-radius: 20px;
+    height: 180px;
+}
+
+.imgGW .T1 {
+    padding: 3%;
+    background-color: rgba(0, 0, 0, 0.615);
+    margin: 5rem 2rem;
+    border-radius: 20px;
+}
+
+
+.bg-img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
 }
