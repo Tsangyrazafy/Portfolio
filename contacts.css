@@ -206,7 +206,8 @@ nav ul li a {
 }
 
 .social-links a.linkedin:hover {
-    background: #e4405e92;
+    background: #1876f29d;
+    ;
     color: white;
     border: 2px solid white;
     border-radius: 50%;
@@ -329,5 +330,5 @@ nav ul li a {
 /* Supprimer les marges ou paddings par défaut des icônes Font Awesome */
 .social-links i {
     margin: 0;
-    padding: 0;
+    padding: 5px;
 }
