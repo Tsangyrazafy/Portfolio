@@ -79,3 +79,255 @@ nav ul li a {
     color: #ffffff;
     font-weight: bold;
 }
+
+
+
+.contact-container {
+    display: flex;
+    min-height: 5vh;
+    padding: 10%;
+}
+
+/* Section Gauche */
+.hero-text {
+    flex: 1.5;
+}
+
+.main-title h2 {
+    font-size: 5rem;
+    line-height: 0.9;
+    font-weight: 400;
+}
+
+.italic-serif {
+    font-style: italic;
+    /* Ajoutez une police spécifique ici pour le look manuscrit/serif du 'p' */
+}
+
+/* Section Droite */
+.contact-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.email-link {
+    font-size: 2rem;
+    border-bottom: var(--border-thin);
+    padding-bottom: 10px;
+    text-decoration: underline;
+    list-style: none;
+}
+
+.social-links ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+
+}
+
+
+.newsletter .input-group {
+    display: flex;
+    border-bottom: var(--border-thin);
+    align-items: center;
+}
+
+.newsletter input {
+    background: transparent;
+    border: none;
+    padding: 15px 0;
+    width: 100%;
+}
+
+.arrow-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* ===== SOCIAL LINKS ===== */
+
+.social-links ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-links li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 15px 0;
+    color: white;
+}
+
+/* Icônes rondes */
+.social-links a {
+    color: white;
+    font-size: 18px;
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    word-spacing: nowrap;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+/* Animation hover générale */
+.social-links a:hover {
+    transform: scale(1.1);
+}
+
+/* Couleurs officielles */
+.social-links a.facebook:hover {
+    background: #1876f29d;
+    color: white;
+    border: 2px solid white;
+    border-radius: 50%;
+
+}
+
+.social-links a.instagram:hover {
+    background: #e4405e92;
+    color: white;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.social-links a.linkedin:hover {
+    background: #e4405e92;
+    color: white;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.nb {
+    white-space: nowrap;
+    display: flex;
+
+}
+
+/* Aligner le titre à gauche et les contacts à droite verticalement */
+.contact-container {
+    display: flex;
+    align-items: center;
+    /* Aligne verticalement le bloc de gauche et de droite */
+    min-height: 80vh;
+    /* Ajusté pour mieux centrer dans la page */
+    padding: 0 10%;
+}
+
+/* Section Droite : Réduire l'espacement global */
+.contact-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+    /* Réduit l'espace entre l'email et les réseaux (était à 3rem) */
+}
+
+/* Réseaux Sociaux : Alignement icônes et réduction saut de ligne */
+.social-links li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* Pousse l'icône à droite du texte */
+    gap: 2px;
+    margin: 5px;
+    /* Réduit l'espace entre chaque ligne de contact (était 15px) */
+    color: white;
+}
+
+/* Pour que le texte ne soit pas collé aux icônes si la colonne est étroite */
+.nb {
+    white-space: nowrap;
+    display: flex;
+    flex: 1;
+    /* Prend l'espace disponible */
+}
+
+.social-links a {
+    flex-shrink: 0;
+    /* Empêche l'icône de s'écraser */
+}
+
+.social-links li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* Aligne tout au début (à gauche) */
+    gap: 2px;
+    /* L'espace de 2px entre le texte et l'icône */
+    margin: 8px 0;
+    /* Espace entre les lignes */
+}
+
+.nb {
+    width: auto;
+    /* Le bloc s'adapte à la taille du texte */
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.social-links a {
+    text-decoration: none;
+    display: flex;
+    /* Permet d'aligner l'icône verticalement */
+    align-items: center;
+    width: auto;
+    /* Supprime toute largeur fixe qui créerait un vide */
+    height: auto;
+}
+
+/* Supprimer les marges ou paddings par défaut des icônes Font Awesome */
+.social-links i {
+    margin: 0;
+    padding: 0;
+}
+
+/* VAOVAO */
+.social-links li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* Aligne tout au début (à gauche) */
+    gap: 1px;
+    /* L'espace de 2px entre le texte et l'icône */
+    margin: 8px 0;
+    /* Espace entre les lignes */
+}
+
+.nb {
+    width: auto;
+    /* Le bloc s'adapte à la taille du texte */
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.social-links a {
+    text-decoration: none;
+    display: flex;
+    /* Permet d'aligner l'icône verticalement */
+    align-items: center;
+    width: auto;
+    /* Supprime toute largeur fixe qui créerait un vide */
+    height: auto;
+}
+
+/* Supprimer les marges ou paddings par défaut des icônes Font Awesome */
+.social-links i {
+    margin: 0;
+    padding: 0;
+}
