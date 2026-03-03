@@ -82,8 +82,30 @@ nav ul li a {
 
 .photo-profils {
     margin: 5rem 5rem 0 5rem;
-
     text-align: center;
+    justify-items: center;
+}
+
+
+
+/* Image elle-même */
+.photo-profils img {
+    display: block;
+    width: auto;
+    /* garde la largeur naturelle */
+    height: 200px;
+    /* comme tu avais */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.photo-profils img:hover {
+    transform: scale(1.1);
+    /* zoom léger */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    /* ombre douce */
+    cursor: pointer;
+    /* main de souris pour indiquer cliquable */
 }
 
 #photo-profils {
