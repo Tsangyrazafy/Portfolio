@@ -1,49 +1,26 @@
-/* Animation */
-@keyframes fadeSlideUp {
-    from {
-        opacity: 0;
-        transform: translateY(40px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Animation du header */
-header {
-    animation: fadeSlideUp 1s ease forwards;
-}
-
-/* Animation du main avec petit délai */
-main {
-    animation: fadeSlideDown 2s ease forwards;
-    animation-delay: 0.3s;
-    opacity: 0;
-    /* important pour que l'effet fonctionne */
-}
-
-@keyframes fadeSlideDown {
-    from {
-        opacity: 0;
-        transform: translateY(40px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-
-/* base */
 body {
     margin: 0px;
     padding: 0px;
-    background: url(F_Emit1.jpg) center/cover;
+    background-image: url(F_Emit1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     min-height: 100vh;
     color: white;
+    /* Animation de fade-in */
+    opacity: 0;
+    animation: fadeInBody 1s ease-in forwards;
+}
+
+@keyframes fadeInBody {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 header {
