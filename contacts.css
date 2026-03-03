@@ -213,6 +213,14 @@ nav ul li a {
     border-radius: 50%;
 }
 
+.social-links a.phone:hover {
+    background: #1f90039d;
+    ;
+    color: white;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
 .nb {
     white-space: nowrap;
     display: flex;
